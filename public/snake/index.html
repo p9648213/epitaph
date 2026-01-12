@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <title>Snake</title>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <script
+            type="text/javascript"
+            src="snake.js"
+        ></script>
+
+        <script type="text/javascript">
+            const canvas = document.getElementById("canvas");
+
+            SnakeModule({ canvas }).then((instance) => {
+                console.log("WASM running", instance);
+            });
+        </script>
+    </body>
+</html>
